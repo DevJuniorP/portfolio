@@ -673,6 +673,15 @@ footer{
   
 }
 
+@media(max-width:550px){
+
+   /* ABOUT */
+
+   .about-container .columns .second-column .second-column-svg{
+      display: none;
+   }
+}
+
 @media(max-width:500px){
    /* HEADER */
 
