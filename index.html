@@ -599,14 +599,23 @@
                <img src="images/form-img_resized.png" alt="" class="contact-img-p">
             </div>
    
-            <form>
+            <form action="https://formsubmit.co/devjunior0812@gmail.com" method="POST">
+
                <div class="inputBox">
-                  <input type="text" placeholder="Nome">
-                  <input type="email" placeholder="Email">
-                  <input type="number" placeholder="Número para contato">
+
+                  <input type="text" name="name" placeholder="Nome" required>
+                  <input type="email" name="email" placeholder="Email" required>
+                  <input type="number" name="number" placeholder="Número de Contato (XX) XXXX-XXXX" required> 
+
                </div><!--inputBox-->
-               <textarea placeholder="Assunto" cols="30" rows="10"></textarea><br>
+
+               <textarea placeholder="Assunto" name="message" cols="30" rows="10"></textarea><br>
+               
                <input type="submit" value="Enviar" class="form-btn">
+
+               <input type="hidden" name="_subject" value="Novo Contato!">
+               <input type="text" name="_honey" style="display:none">
+               <input type="hidden" name="_captcha" value="false">
             </form>
    
          </div><!--contact-container-->
