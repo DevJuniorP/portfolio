@@ -4,6 +4,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- FAVICON -->
+   <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
    <!-- ESTILIZAÇÃO -->
    <link rel="stylesheet" href="css/styles.css">
    <!-- ICONES -->
@@ -481,72 +483,78 @@
 
 <main>
    <section id="about" class="about">
-     <div class="about-container">
-         <h1 class="section-title">SOBRE MIM</h1>
-         <p class="section-desc">Minha introdução</p>
-         <hr class="divisor">
-         <div class="columns">
-            <div class="first-column">
-               <p class="about-desc">
-                  Desenvolvedor Web, iniciei meus estudos no ano de 2022, <br>
-                  estou em busca das oportunidades de trabalho, atualmente trabalho como freelancer, <br>
-                  entusiasta em tecnologia.
-               </p>
-               <div class="first-column-skills">
-                  <div class="skill-single">
-                     <i class="uil uil-tachometer-fast"></i>
-                     <h3 class="skill-title">Rápidos</h3>
-                     <span class="skill-desc">Foco na entrega de sites rápidos e com qualidade.</span>
-                  </div><!--skill-single-->
-                  <div class="skill-single">
-                     <i class="uil uil-mobile-android"></i>
-                     <h3 class="skill-title">Responsivos</h3>
-                     <span class="skill-desc">Layouts compatíveis com tamanhos de telas grandes ou pequenas.</span>
-                  </div><!--skill-single-->
-                  <div class="skill-single">
-                     <i class="uil uil-rocket"></i>
-                     <h3 class="skill-title">Dinâmicos</h3>
-                     <span class="skill-desc">Sites não apenas estáticos mas com vida.</span>
-                  </div><!--skill-single-->
-                  <div class="skill-single">
-                     <i class="uil uil-lightbulb-alt"></i>
-                     <h3 class="skill-title">Intuitivos</h3>
-                     <span class="skill-desc">Sites com design pensados em fácil navegação.</span>
-                  </div><!--skill-single-->
-               </div><!--first-column-skills-->
-            </div><!--first-column-->
-            <div class="second-column">
-               <img src="header-img.svg" class="second-column-svg">
-            </div><!--second-column-->
-         </div><!--columns-->
-     </div><!--about-container-->
+
+      <h1 class="section-title">SOBRE</h1>
+      <p class="section-desc">Um pouco sobre mim.</p>
+      <hr class="divisor">
+
+      <div class="about-container">
+
+         <div class="about-text">
+
+            <p>
+               Desenvolver Web, iniciei meus estudos no ano de 2022, atualmente freelancer mas estou em busca de ofertas de trabalho, entusiasta em tecnologia e constantemente buscando novos conhecimentos. 
+            </p>  
+            <div class="skills">
+
+               <div class="skills-container">
+   
+                  <div class="skills-single">
+                     <img src="./images/html5.png" class="skills-img">
+                  </div><!--skills-single-->
+   
+                  <div class="skills-single">
+                     <img src="./images/css.png" alt="css" class="skills-img">
+                  </div><!--skills-single-->
+   
+                  <div class="skills-single">
+                     <img src="./images/atom.png" alt="reactjs" class="skills-img">
+                  </div><!--skills-single-->
+   
+                  <div class="skills-single">
+                     <img src="./images/js.png" alt="javascript" class="skills-img">
+                  </div><!--skills-single-->
+   
+               </div><!--skills-container-->
+   
+            </div><!--skills-->
+
+         </div><!--about-text-->
+
+         <div class="about-image">
+
+            <img src="images/astronauta.png" alt="astronauta" class="about-img">
+            <img src="images/astronauta_resized.png" alt="astronauta-resized" class="about-img-p">
+
+         </div><!--about-image-->
+
+      </div><!--about-container-->
+
    </section><!--about-->
    
    <!-- Fim Section Sobre -->
    
    <!-- Section Portfolio -->
    <section id="portfolio" class="portfolio">
-      <div class="portfolio-container">
          <h1 class="section-title">PORTFOLIO</h1>
          <p class="section-desc">Alguns dos meus projetos</p>
          <hr class="divisor">
-      </div><!--portfolio-container-->
    
       <div class="project-container">
    
          <div class="project">
-            <img class="project-img" src="MFood-desktop.png" alt="Site Restaurante">
+            <img class="project-img" src="./images/MFood-desktop.png" alt="Site Restaurante">
             <div class="project-content">
-               <img src="hamburguer.png">
+               <img src="images/hamburger (2).png" alt="">
                <h3>Restaurante</h3>
                <p>HTML / CSS / JS</p>
             </div><!--content-->
          </div><!--project-->
    
          <div class="project">
-            <img class="project-img" src="Salão-de-Beleza.png" alt="Site Restaurante">
+            <img class="project-img" src="./images/Salão-de-Beleza.png" alt="Site Restaurante">
             <div class="project-content">
-               <img src="manicure.png">
+               <img src="./images/manicure.png">
                <h3>Restaurante</h3>
                <p>HTML / CSS / JS</p>
             </div><!--content-->
@@ -555,7 +563,7 @@
          <div class="project">
             <!-- <img class="project-img" src="error.png" alt="Site Restaurante"> -->
             <div class="project-content">
-               <img src="not-found.png">
+               <img src="./images/browser.png">
                <h3>Em Breve</h3>
                <p>Em Breve</p>
             </div><!--content-->
@@ -564,35 +572,11 @@
          <div class="project">
             <!-- <img class="project-img" src="error.png" alt="Site Restaurante"> -->
             <div class="project-content">
-               <img src="not-found.png">
+               <img src="./images/browser.png">
                <h3>Em Breve</h3>
                <p>Em Breve</p>
             </div><!--content-->
          </div><!--project-->
-
-         <div class="area">
-
-            <div class="area-container">
-
-               <div class="area-single">
-                  <img src="html5.png" class="area-img">
-               </div><!--area-single-->
-
-               <div class="area-single">
-                  <img src="css.png" alt="css" class="area-img">
-               </div><!--area-single-->
-
-               <div class="area-single">
-                  <img src="atom.png" alt="reactjs" class="area-img">
-               </div><!--area-single-->
-
-               <div class="area-single">
-                  <img src="js.png" alt="javascript" class="area-img">
-               </div><!--area-single-->
-
-            </div><!--area-container-->
-
-         </div><!--area-->
    
       </div><!--project-container-->
    </section><!--portfolio-->
@@ -610,7 +594,8 @@
          <div class="contact-container">
    
             <div class="image">
-               <img src="form-img.png" alt="" class="contact-img">
+               <img src="./images/form-img.png" alt="" class="contact-img">
+               <img src="images/form-img_resized.png" alt="" class="contact-img-p">
             </div>
    
             <form>
@@ -666,7 +651,6 @@
 <!-- SCROLL TOP -->
 
 <a href="#home" id="scroll-top"><i class="uil uil-angle-up"></i></a>
-
 
 
 
