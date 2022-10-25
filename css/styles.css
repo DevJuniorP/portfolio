@@ -234,17 +234,13 @@ header .menu .navbar a:hover{
    font-size: 1.3rem;
 }
 
-.about-container .about-image{
+.about-container .about-image-container{
    flex: 1 1 30rem;
-   animation: float 3s linear infinite;
-   filter: drop-shadow(0 0 .8rem var(--clr-purple-details));
 }
 
-.about-container .about-image .about-img-p{
-   flex: 1 1 30rem;
-  display: none;
-  animation: float 3s linear infinite;
-  filter: drop-shadow(0 0 .8rem var(--clr-purple-details));
+.about-container .about-image-container .about-img{
+   animation: float 3s linear infinite;
+   filter: drop-shadow(0 0 .8rem var(--clr-purple-details));
 }
 
 .about .skills{
@@ -262,6 +258,11 @@ header .menu .navbar a:hover{
 .about .skills .skills-container .skills-single .skills-img{
    width: 5rem;
    height: 5rem;
+}
+
+.about .skills .skills-title{
+   text-align: center;
+   margin-bottom: 2rem;
 }
 
 
@@ -561,6 +562,11 @@ footer{
       font-size: .9rem;
    }
 
+   /* ABOUT */
+   .about .skills .skills-title{
+      font-size: 1.2rem;
+   }
+
    
 }
 
@@ -606,12 +612,13 @@ footer{
    }
 
    /* ABOUT */
-   .about-container .about-image .about-img{
-      display: none;
+   .about-container .about-image-container .about-img{
+      width: 250px;
+      height: 250px;
    }
 
-   .about-container .about-image .about-img-p{
-      display: initial;
+   .about-container .about-image-container{
+      padding-left: 30%;
    }
   
 }
@@ -620,11 +627,15 @@ footer{
    /* HEADER */
 
    header .content h1,h2{
-      font-size: .9rem;
+      font-size: 1.2rem;
       text-align: center;
    }
 
    /* ABOUT */
+
+   .about-container .about-image-container{
+      padding-left: 20%;
+   }
 
    /* CONTACT */
    .contact .contact-container{
